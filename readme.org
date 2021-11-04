@@ -1,0 +1,25 @@
+* project hecate
+
+** cmake and repo structure proposal
+   https://cliutils.gitlab.io/modern-cmake/chapters/basics/structure.html
+
+   use "modern" cmake
+   move all detection and framework "libs" to the same folder: libs
+   products => apps?
+   invert current split of inc, src and test and make every lib self contained
+
+   inc => include
+   no separate folder for private headers
+
+   *.h => *.hpp ? Who cares?
+
+   Limit the amount of "subdirectory" CMakeLists.txt files, does not work well with QtCreator
+
+** code style
+   create and force style options
+
+   filenames lowercase or camelcase?
+
+   member variable naming? (don't really care)
+   https://stackoverflow.com/questions/1228161/why-use-prefixes-on-member-variables-in-c-classes
+   
